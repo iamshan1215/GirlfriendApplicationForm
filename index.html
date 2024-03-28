@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girlfriend Application Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico.png" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <h1 id="title">Girlfriend Application Form</h1>
+        <p id="description">(I'm lonely please fill out)</p>
+    </header>
+
+    <main>
+    <form id="survey-form">
+        <div class="info">
+            <p class="info">Basic Information</p>
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="number" id="number-label">Age:</label>
+        <input type="number" id="number" name="age" min="18" max="99" required>
+    </div>
+        <label for="dropdown" id="dropdown-label">How long do you plan on staying?</label>
+        <select id="dropdown" name="stay">
+            <option value="">please select</option>
+            <option value="eternity">for eternity, my love.</option>
+            <option value="know_first">i want to know you first before i decide</option>
+            <option value="2-3_weeks">2-3 weeks? consider this as a free trial</option>
+            <option value="">(if you ain't keeping me, then leave!)</option>
+        </select>
+
+        <label id="radio-label">Do you like cats?</label>
+        <input type="radio" name="cats" id="cats_yes" value="yes">yes
+        <input type="radio" name="cats" id="cats_no" value="no">no
+
+
+    <div class="songs">
+        <label id="songs-label">Top 5 songs:</label>
+        <input type="text" name="song1" id="song1">
+        <input type="text" name="song2" id="song2">
+        <input type="text" name="song3" id="song3">
+        <input type="text" name="song4" id="song4">
+        <input type="text" name="song5" id="song5">
+    </div>
+
+    <div class="rf">
+        <label id="random-facts-label">Random Facts:</label>
+        <input type="text" name="rf1" id="rf1">
+        <input type="text" name="rf2" id="rf2">
+        <input type="text" name="rf3" id="rf3">
+        <input type="text" name="rf4" id="rf4">
+        <input type="text" name="rf5" id="rf5">
+    </div>
+        <label id="nickname-label">Would you be okay if I give you a nickname?</label>
+        <input type="radio" name="nickname" id="nickname_yes" value="yes">yes
+        <input type="radio" name="nickname" id="nickname_no" value="no">no
+
+        <br> <br>
+        <label id="words-label">How would you describe yourself in a few words?</label> <br>
+        <input type="text" name="words" id="words"><br>
+        <div class="checkbox-container">
+            <input type="checkbox" name="funny" id="funny" value="funny">
+            <label for="funny">Funny</label>
+        </div>
+        <div class="checkbox-container">
+            <input type="checkbox" name="understanding" id="understanding" value="understanding">
+            <label for="understanding">Understanding</label>
+        </div>
+        <div class="checkbox-container">
+            <input type="checkbox" name="caring" id="caring" value="caring">
+            <label for="caring">Caring</label>
+        </div>        
+        <label for="comments">Give me a sample of your pick up lines:</label>
+        <textarea id="comments" name="comments" placeholder="example: tae kaba? ayaw kita paglaruan"></textarea> <br> <br>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</main>
+</body>
+</html>
